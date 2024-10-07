@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RWD NAVBAR</title>
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+        <link rel="stylesheet" href="./rwd.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><i class='bx bx-x'></i></a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Usage</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">NajimDev</a></li>
+                <li class="hideOnMobile"><a href="#">Service</a></li>
+                <li class="hideOnMobile"><a href="#">Usage</a></li>
+                <li class="hideOnMobile"><a href="#">Documentation</a></li>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="menu-button" style="font-size: 20px;" onclick="showSidebar()"><a href="#"><i
+                            class='bx bx-menu'></i></a></li>
+
+            </ul>
+        </nav>
+
+        <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    </body>
+</html>
